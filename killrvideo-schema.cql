@@ -82,7 +82,7 @@ CREATE TABLE videos (
 
 // CQL 3.2 spec included secondary indexes of collections
 // These are not for speed but convenience
-CREATE INDEX tags_idx ON videos(ENTRIES(tags)); 
+CREATE INDEX tags_idx ON videos(tags); 
 
 // CQL 3.4 spec introduced MATERIALIZED VIEWS
 CREATE MATERIALIZED VIEW videos_by_location
